@@ -16,6 +16,17 @@ body {
   display: grid;
 }
 
+.loader {
+  position : fixed;
+  z-index: 9999;
+  background : url('assets/sleep.gif') 50% 50% no-repeat;
+  top : 0px;
+  left : 0px;
+  height : 100%;
+  width : 100%;
+  cursor : wait;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

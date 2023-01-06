@@ -56,8 +56,9 @@ const JSON_KEY_FOR_RETAIL_NAME = 'name'
 const JSON_KEY_FOR_GAMES_LIST = 'games'
 const JSON_KEY_FOR_HOME_PAGE = 'homePage'
 const JSON_KEY_FOR_CSS = 'cssPath'
-const MENU_PATH = 'menu.html'
-const CLIENT_PATH = 'client/index.html'
+const JSON_KEY_FOR_MENU = 'menuPath'
+const MENU_URL = 'menu.html'
+const CLIENT_URL = 'client/index.html'
 const IS_INSTANCE_HANDLED_BY_TAG = true
 var IN_GAME_ASSETS_PATH
 var AD_ASSETS_PATH
@@ -69,6 +70,7 @@ var GIF_PATH
 var RETAIL_NAME
 var HOME_PAGE_PATH
 var CSS_PATH
+var MENU_PATH
 var ALL_CONTENT_INSTANCE_JSON
 var INSTANCE_JSON
 var CONFIG_JSON
@@ -131,6 +133,7 @@ function setLocationVariables() {
 	AD_FORMAT = INSTANCE_JSON[JSON_KEY_FOR_AD_FORMAT] ? INSTANCE_JSON[JSON_KEY_FOR_AD_FORMAT] : '.png'
 	RETAIL_NAME = INSTANCE_JSON[JSON_KEY_FOR_RETAIL_NAME]
 	CSS_PATH = INSTANCE_JSON[JSON_KEY_FOR_CSS]
+	MENU_PATH = INSTANCE_JSON[JSON_KEY_FOR_MENU]
 	URL_SEARCH_PARAM_FOR_RETAIL_LOCATION = (localStorage[LOCAL_STORAGE_KEY_FOR_RETAIL_LOCATION] ? ('?' + RETAIL_LOCATION_TAG_NAME + '=' + localStorage[LOCAL_STORAGE_KEY_FOR_RETAIL_LOCATION]) : '')
 	loadGameMap()
 }
@@ -256,11 +259,11 @@ function customizeLandingPage() {
 }
 
 function openClientPage() {
-	window.location.href = window.location.origin + '/' + CLIENT_PATH
+	window.location.href = window.location.origin + '/' + CLIENT_URL
 }
 
 function openMenu() {
-	window.location.href = window.location.origin + '/' + MENU_PATH +
+	window.location.href = window.location.origin + '/' + MENU_URL +
 	// Temporary fix to always capture the location in GA from where the URL was first reached. Every change in href needs to add this for consistency.
 	// TODO: move to location based subdomains for permanent fix
 	(URL_SEARCH_PARAM_FOR_RETAIL_LOCATION ? URL_SEARCH_PARAM_FOR_RETAIL_LOCATION : '')

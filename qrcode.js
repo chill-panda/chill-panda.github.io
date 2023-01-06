@@ -1,4 +1,4 @@
-const tag_for_qr = 'nhs'
+const tag_for_qr = 'cafeuntitled'
 const tag_required = true
 const qrcode_download = true
 

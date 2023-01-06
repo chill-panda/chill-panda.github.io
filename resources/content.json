@@ -5,11 +5,12 @@
 		"name": "Chill Panda",
 		"website": "https://chillpanda.in",
 		"logo": "../../assets/retailers/ChillPanda/ChillPanda.png",
-		"gif": "../../assets/retailers/ChillPanda/panda.gif",
+		"gif": "../../assets/retailers/gif_path/panda.gif",
 		"ingamePath": "../../../assets/retailers/ChillPanda/ingame/",
 		"adPath": "../../../assets/retailers/ChillPanda/ads/",
 		"totalAds": 6,
-		"content": []
+		"content": [],
+		"menuPath": "assets/retailers/ChillPanda/menu.csv"
 	},
 	{
 		"id": "parthadental",
@@ -18,11 +19,12 @@
 		"industry": "Hospital",
 		"website": "https://www.parthadental.com/",
 		"logo": "../../assets/retailers/ParthaDental/ParthaDental.jpeg",
-		"gif": "../../assets/retailers/ParthaDental/stethoscope.gif",
-		"ingamePath": "../../../assets/retailers/ParthaDental/ingame/",
+		"gif": "../../assets/retailers/gif_path/stethoscope.gif",
+		"ingamePath": "../../../assets/retailers/ingame/Hospital/",
 		"adPath": "../../../assets/retailers/ParthaDental/ads/",
 		"totalAds": 4,
-		"content": []
+		"content": [],
+		"menuPath": "assets/retailers/ParthaDental/menu.csv"
 	},
 	{
 		"id": "nostrocafe",
@@ -31,15 +33,16 @@
 		"industry": "Cafe",
 		"website": "https://chillpanda.in",
 		"logo": "../../assets/retailers/NostroCafe/NostroCafe.png",
-		"gif": "../../assets/retailers/NostroCafe/coffee.gif",
-		"ingamePath": "../../../assets/retailers/NostroCafe/ingame/",
+		"gif": "../../assets/retailers/gif_path/coffee.gif",
+		"ingamePath": "../../../assets/retailers/ingame/Cafe/",
 		"adPath": "../../../assets/retailers/NostroCafe/ads/",
 		"totalAds": 8,
 		"adFormat": ".gif",
 		"content": [],
 		"games": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
 		"homePage": "assets/retailers/NostroCafe/home.jpeg",
-		"cssPath": "assets/retailers/NostroCafe/style.css"
+		"cssPath": "assets/retailers/NostroCafe/style.css",
+		"menuPath": "assets/retailers/NostroCafe/menu.csv"
 	},
 	{
 		"id": "coffeecrush",
@@ -48,11 +51,12 @@
 		"industry": "Cafe",
 		"website": "http://coffeecrush.net/site/",
 		"logo": "../../assets/retailers/CoffeeCrush/CoffeeCrush.jpg",
-		"gif": "../../assets/retailers/CoffeeCrush/coffee.gif",
-		"ingamePath": "../../../assets/retailers/CoffeeCrush/ingame/",
+		"gif": "../../assets/retailers/gif_path/coffee.gif",
+		"ingamePath": "../../../assets/retailers/ingame/Cafe/",
 		"adPath": "../../../assets/retailers/CoffeeCrush/ads/",
 		"totalAds": 10,
-		"content": []
+		"content": [],
+		"menuPath": "assets/retailers/CoffeeCrush/menu.csv"
 	},
 	{
 		"id": "bbb",
@@ -61,11 +65,12 @@
 		"industry": "Biryani",
 		"website": "http://coffeecrush.net/site/",
 		"logo": "../../assets/retailers/BangaloreBiryaniBhawan/CoffeeCrush.jpg",
-		"gif": "../../assets/retailers/BangaloreBiryaniBhawan/turkey-leg.gif",
-		"ingamePath": "../../../assets/retailers/BangaloreBiryaniBhawan/ingame/",
+		"gif": "../../assets/retailers/gif_path/turkey-leg.gif",
+		"ingamePath": "../../../assets/retailers/ingame/Biryani/",
 		"adPath": "../../../assets/retailers/BangaloreBiryaniBhawan/ads/",
 		"totalAds": 5,
-		"content": []
+		"content": [],
+		"menuPath": "assets/retailers/BangaloreBiryaniBhawan/menu.csv"
 	},
 	{
 		"id": "toniguy",
@@ -74,11 +79,12 @@
 		"industry": "Salon",
 		"website": "http://toniandguy.com",
 		"logo": "../../assets/retailers/ToniGuy/Toni_and_Guy_logo.png",
-		"gif": "../../assets/retailers/ToniGuy/scissors.gif",
-		"ingamePath": "../../../assets/retailers/ToniGuy/ingame/",
+		"gif": "../../assets/retailers/gif_path/scissors.gif",
+		"ingamePath": "../../../assets/retailers/ingame/Salon/",
 		"adPath": "../../../assets/retailers/ToniGuy/ads/",
 		"totalAds": 6,
-		"content": []
+		"content": [],
+		"menuPath": "assets/retailers/ToniGuy/menu.csv"
 	},
 	{
 		"id": "nhs",
@@ -87,10 +93,25 @@
 		"industry": "Hospital",
 		"website": "http://nhshospitals.in",
 		"logo": "../../assets/retailers/NHS/NHS_logo.jpeg",
-		"gif": "../../assets/retailers/NHS/scissors.gif",
-		"ingamePath": "../../../assets/retailers/NHS/ingame/",
+		"gif": "../../assets/retailers/gif_path/stethoscope.gif",
+		"ingamePath": "../../../assets/retailers/ingame/Hospital",
 		"adPath": "../../../assets/retailers/NHS/ads/",
 		"totalAds": 9,
-		"content": []
-	}
+		"content": [],
+		"menuPath": "assets/retailers/NHS/menu.csv"
+	},
+	{
+		"id": "cafeuntitled",
+		"urlTag": "cafeuntitled",
+		"name": "Cafe Untitled",
+		"industry": "Cafe",
+		"website": "https://www.instagram.com/cafeuntitled_official",
+		"logo": "../../assets/retailers/CafeUntitled/CafeUntitledLogoWhite.jpg",
+		"gif": "../../assets/retailers/gif_path/coffee.gif",
+		"ingamePath": "../../../assets/retailers/ingame/Cafe",
+		"adPath": "../../../assets/retailers/CafeUntitled/ads/",
+		"totalAds": 5,
+		"content": [],
+		"menuPath": "assets/retailers/CafeUntitled/menu.csv"
+	}	
 ]

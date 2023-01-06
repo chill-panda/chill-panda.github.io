@@ -1,0 +1,94 @@
+<form id="form">
+  <label for="industry">Industry:</label><br><br>
+  <select id="industry" name="industry">
+    <option value="Cafe">Cafe</option>
+    <option value="Hospital">Hospital</option>
+    <option value="Salon">Salon</option>
+    <option value="Biryani">Biryani</option>
+  </select><br>
+  <label for="id">ID (Give a unique ID for the customer. To be used as an index in DB tables):</label><br><br>
+  <input type="text" id="id" name="id"><br><br>
+  <label for="urlTag">URL Tag(Give a unique url Tag for the customer):</label><br><br>
+  <input type="text" id="urlTag" name="urlTag"><br><br>
+  <label for="name">Name(Name of the customer):</label><br><br>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="website">Website(Or preferred social media site):</label><br><br>
+  <input type="text" id="website" name="website"><br><br>
+  <label for="logo">Logo Location(Example: ../../assets/retailers/NHS/NHS_logo.jpeg) <br> Make sure the image file is in the given location :</label><br><br>
+  <input type="text" id="logo" name="logo"><br><br>
+  <label for="adPath">Ads Location(Example: ../../../assets/retailers/NHS/ads/) <br> Make sure the FOLDER is present in the given location :</label><br><br>
+  <input type="text" id="adPath" name="adPath"><br><br>
+  <label for="totalAds">Total Ads(Check the total ad files in the ads folder):</label><br><br>
+  <input type="number" id="totalAds" name="totalAds"><br><br>
+  <input type="button" value="Submit" onclick="submitForm()">
+</form> 
+
+<script>
+function submitForm() {
+  var formData = {
+    "id": document.getElementById("id").value,
+    "urlTag": document.getElementById("urlTag").value,
+    "name": document.getElementById("name").value,
+    "industry": document.getElementById("industry").value,
+    "website": document.getElementById("website").value,
+    "logo": document.getElementById("logo").value,
+    "adPath": document.getElementById("adPath").value,
+    "totalAds": document.getElementById("totalAds").value,
+    "content": [] 
+  };
+
+  var gif;
+  if (formData.industry == "cafe") {
+    gif = "../../assets/retailers/gif_path/coffee.gif";
+  } else if (formData.industry == "salon") {
+    gif = "../../assets/retailers/gif_path/scissors.gif";
+  } else if (formData.industry == "Hospital") {
+    gif = "../../assets/retailers/gif_path/stethoscope.gif";
+  } else if (formData.industry == "Biryani") {
+    gif = "../../assets/retailers/gif_path/turkey-leg.gif";
+  } else {
+    gif = "../../assets/retailers/gif_path/panda.gif";
+  }
+  formData.gif = gif;
+
+  var ingamePath;
+  if (formData.industry == "cafe") {
+    ingamePath = "../../../assets/retailers/ingame/Cafe/";
+  } else if (formData.industry == "salon") {
+    ingamePath = "../../../assets/retailers/ingame/Salon/";
+  } else if (formData.industry == "Hospital") {
+    ingamePath = "../../../assets/retailers/ingame/Hospital";
+  } else if (formData.industry == "Biryani") {
+    ingamePath = "../../../assets/retailers/ingame/Biryani/";
+  } else {
+    ingamePath = "../../../assets/retailers/ChillPanda/ingame/";
+  }
+  formData.ingamePath = ingamePath;
+
+  document.body.innerHTML += "<br>" + JSON.stringify(formData)
+  }
+</script>
+</body>
+</html>
+
+
+<!-- 
+Chat GPT Input:
+
+Give me a html code to which has following:
+
+industry drop down with 3 options - Cafe, Hospital and Salon
+1 text box to fill for id
+1 text box to fill for urlTag
+1 text box to fill for name
+1 text box to fill for website
+1 text box to fill for Logo Location
+1 text box to fill for Ads Location
+1 number box to fill for totalAds
+1 button called submit.
+When submit button is clicked, bottom of the page should have printed Output for each of these inputs in JSON Key value pairs
+JSON should have following Keys also:
+gif key which is defined as: if industry is Cafe then use this: "../../assets/retailers/gif_path/coffee.gif"
+         else if  industry is Salon then use this: "../../assets/retailers/gif_path/scissors.gif"
+         else use this: "../../assets/retailers/gif_path/stethoscope.gif" 
+       -->
